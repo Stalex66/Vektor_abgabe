@@ -104,7 +104,7 @@ public:
 
     }
 
-    void push_back(value_type x){
+    void push_back(const_reference x){
         if(sz+1>max_sz){
             reserve((sz+5)*2);
             values[sz] = x;
